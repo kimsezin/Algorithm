@@ -4,10 +4,13 @@
 
 using namespace std;
 
+
 vector<pair<int, int>> city[1001];
 priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
 int dist[1001];
 bool visited[1001] = { false, };
+
+
 void doDijkstra(int _start)
 {
 	dist[_start] = 0;

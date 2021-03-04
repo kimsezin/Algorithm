@@ -4,7 +4,7 @@
 using namespace std;
 int N;
 
-long long medicine[31][31];
+long long medicine[31][31] = { 0, };
 int cnt = 0;
 void solve(int _N)
 {

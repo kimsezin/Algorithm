@@ -44,7 +44,7 @@ struct TRIE
 TRIE* root = 0;
 int t;
 int n;
-char phone[51][10001];
+char phone[10000][10];
 
 void solve()
 {
@@ -90,6 +90,7 @@ int main()
 		{
 			cin >> phone[j];
 		}
+		for(int i=0;i<)
 		solve();
 	}
 

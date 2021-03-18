@@ -14,8 +14,8 @@ void solve(int _pos, string _temp, int _mo, int _ja)
 	if (_temp.size() == L)
 	{
 		if (_mo >= 1 and _ja >= 2)
-		{
-			result.push_back(_temp);
+		{	
+			cout << _temp << endl;
 			return;
 		}
 	}
@@ -46,9 +46,6 @@ int main()
 
 
 	solve(0,"",0,0);
-	for (auto e : result)
-	{
-		cout << e << endl;
-	}
+	
 	return 0;
 }

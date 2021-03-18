@@ -7,29 +7,16 @@ using namespace std;
 int N;
 
 
-struct Info
-{
-	string name;
-	int day;
-	int month;
-	int year;
-};
-Info information[100];
 int main()
 {
 	cin >> N;
+	vector<pair<pair<int, int>, pair<int, string>>> info(N);
 	for (int i = 0; i < N; i++)
 	{
-		cin >> information[i].name >> information[i].day >>
-			information[i].month >> information[i].year;
+		cin >> info[i].second.second >> info[i].second.first >>
+			info[i].first.second >> info[i].first.first;
 	}
-	
-	int min = 2010;
-	for (int i = 0; i < N; i++)
-	{
-
-	}
-	
-	
+	sort(info.begin(), info.end());
+	cout << (*(info.end() - 1)).second.second << endl << (*(info.begin())).second.second;
 	return 0;
 }

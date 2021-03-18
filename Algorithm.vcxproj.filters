@@ -126,5 +126,11 @@
     <ClCompile Include="5635_생일.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1408_24.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2439_별찍기2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

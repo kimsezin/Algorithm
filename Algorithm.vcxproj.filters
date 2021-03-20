@@ -144,5 +144,8 @@
     <ClCompile Include="9325_얼마.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="17144_미세먼지안녕.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -147,5 +147,11 @@
     <ClCompile Include="17144_미세먼지안녕.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="12886_돌그룹.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10282_해킹.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

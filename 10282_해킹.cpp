@@ -1,35 +1,31 @@
-#include <iostream>
-#include<fstream>
-#include<string>
+#include<iostream>
+#include<vector>
 using namespace std;
+int T;
 
+int infect; // 감염 컴퓨터 수
+int infect_sec; // 마지막 컴퓨터가 감염되기까지 걸린 시간
 int main()
 {
-    string data;
-    char jumin1[20] = { 0, };
-    char jumin2[20] = { 0, };
-    char year[5] = { 0, }, month[3] = { 0, }, day[3] = { 0, };
+	cin >> T;
 
-    cout << "주민번호를 입력하세요:";
-    getline(cin, data);
-    cout << "-";
-    cin >> jumin2;
+	for (int i = 0; i < T; i++)
+	{
+		int n,d,c;
+		cin >> n >> d >> c;
 
+		vector<vector<pair<int, int>>> hack(n + 1);
+		for (int j = 0; j < d; j++)
+		{
+			int a, b, s;
+			cin >> a >> b >> s;
+			
+			hack[b].emplace_back(a, s);
+		}
+		infect = 0;
+		infect_sec = 0;
+		solve(hack, c, n);
+	}
 
-
-
-
-    if (jumin2[0] == '1' || jumin2[0] == '2')
-        strcpy_s(year, _countof(year), "19");
-    else
-        strcpy_s(year, _countof(year), "20");
-
-    strncat_s(year, _countof(year), jumin1, 2);
-    strncpy_s(month, _countof(month), jumin1 + 2, 2);
-    strncpy_s(day, _countof(day), jumin1 + 4, 2);
-
-    cout << "니 생일은" << year << "년" << month << "월" << day << "일 입니다" << endl;
-
-
-    return 0;
+	return 0;
 }

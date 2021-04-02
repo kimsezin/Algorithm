@@ -159,5 +159,20 @@
     <ClCompile Include="1188_음식평론가.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2748_피보나치 수2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5565_영수증.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2010_플러그.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="동전 양의정수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="유적지 자물쇠,키.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

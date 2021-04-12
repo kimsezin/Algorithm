@@ -201,5 +201,14 @@
     <ClCompile Include="1157_단어 공부.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2493_탑.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="가사검색.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="승준질문.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

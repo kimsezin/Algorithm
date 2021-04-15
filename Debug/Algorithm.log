@@ -1,2 +1,4 @@
-﻿  승준질문.cpp
+﻿  프로그래머스_1.cpp
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_1.cpp(23,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_1.cpp(28,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   Algorithm.vcxproj -> C:\Users\사용자\source\repos\Algorithm\Debug\Algorithm.exe

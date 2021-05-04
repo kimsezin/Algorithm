@@ -1,6 +1,2 @@
-﻿  Naver_AI_Rush_2번.cpp
-C:\Users\사용자\source\repos\Algorithm\Algorithm\Naver_AI_Rush_2번.cpp(13,15): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\사용자\source\repos\Algorithm\Algorithm\Naver_AI_Rush_2번.cpp(26,22): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\사용자\source\repos\Algorithm\Algorithm\Naver_AI_Rush_2번.cpp(39,19): warning C4018: '>=': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\사용자\source\repos\Algorithm\Algorithm\Naver_AI_Rush_2번.cpp(45,31): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+﻿  2493_탑.cpp
   Algorithm.vcxproj -> C:\Users\사용자\source\repos\Algorithm\Debug\Algorithm.exe

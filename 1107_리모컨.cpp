@@ -46,9 +46,9 @@ int main()
 		cin >> num;
 		break_down[num] = true;
 	}
-
-	int result = abs(target - 100); //시작점이 100인데 0으로 바꿔서 계산하기 편하게
-	for (int i = 0; i < 1000000; i++)
+	//채널이동을 위아래버튼으로만 했을 시
+	int result = abs(target - 100); 
+	for (int i = 0; i < 999900; i++)
 	{
 		int len = check(i);
 		if (len > 0)

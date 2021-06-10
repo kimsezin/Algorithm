@@ -7,7 +7,7 @@ bool order;
 
 int Arr[100001]; //숫자만 뽑아내서 저장할 배열
 char command[100001]; //명령어만 따로 저장할 배열
-char input_arr[400004]; //처음에 입력받을 배열
+char input_arr[400001]; //처음에 입력받을 배열
 
 void Initialize()
 {
@@ -16,7 +16,7 @@ void Initialize()
 		Arr[i] = 0;
 		command[i] = '\0'; //\0은 Null을 의미 숫자 0하고 구분하기위함
 	}
-	for (int i = 0; i < 100001; i++)
+	for (int i = 0; i < 400001; i++)
 	{
 		input_arr[i] = '\0';
 	}
@@ -55,24 +55,23 @@ void Input()
 	{
 		if (input_arr[i] != '[' && input_arr[i] != ']' && input_arr[i] != ',')
 		{
-			int j = i;
 			int x = 0;
 			while (input_arr[i] != '[' && input_arr[i] != ']' && input_arr[i] != ',')
 			{
-				x = x + (input_arr[j] - '0');
+				x = x + (input_arr[i] - '0');
 				x = x * 10;
-				j++;
 				i++;
 			}
 			x = x / 10;
-			Arr[Idx++] = x; // 숫자만 추출한 배열에 저장
+			Arr[Idx] = x; // 숫자만 추출한 배열에 저장
+			Idx = Idx + 1;
 		}
 	}
 	end_idx = Idx - 1;
 }
 void solution()
 {
-	bool Flag = true;
+	bool Flag = true; //에러판별용
 	int len = My_Strlen_ch(command);
 	int size = My_Strlen_int(Arr);
 

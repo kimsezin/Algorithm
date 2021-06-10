@@ -1,2 +1,2 @@
 ﻿  5403_AC.cpp
-  Algorithm.vcxproj -> C:\Users\사용자\source\repos\Algorithm\Debug\Algorithm.exe
+C:\Users\사용자\source\repos\Algorithm\Algorithm\5403_AC.cpp(61,24): error C2065: 'ㅑ': 선언되지 않은 식별자입니다.

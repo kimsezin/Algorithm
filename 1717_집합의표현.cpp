@@ -23,35 +23,37 @@ void _union()
 
 	if (pa > pb)
 	{
-
+		group[pa] = pb;
+	}
+	else
+	{
+		group[pb] = pa;
 	}
 }
 int main(void)
 {
+	int m;
+	ios_base::sync_with_stdio(false);
 	cin.tie(0);
 	cout.tie(0);
-
 	cin >> N >> M;
-	for (int i = 0; i < N; i++)
-	{
-		group[i] = i;
-	}
-	for (int i = 0; i < M; i++)
-	{
+
+	for (int i = 0; i <= N; i++) group[i] = i;
+
+	for (int i = 0; i < M; i++) {
 		cin >> check >> a >> b;
-		if (check == 0)
-		{
+		if (check == 0) {
 			_union();
 		}
-		else
-		{
+		else {
+	
 			if (find(a) == find(b))
 			{
-				cout << "YES" << endl;
+				printf("YES\n");
 			}
 			else
 			{
-				cout << "NO" << endl;
+				printf("NO\n");
 			}
 		}
 	}

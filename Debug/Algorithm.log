@@ -1,2 +1,3 @@
-﻿  2206_벽부수고이동하기.cpp
+﻿  1717_집합의표현.cpp
+C:\Users\사용자\source\repos\Algorithm\Algorithm\1717_집합의표현.cpp(35,6): warning C4101: 'm' :참조되지 않은 지역 변수입니다.
   Algorithm.vcxproj -> C:\Users\사용자\source\repos\Algorithm\Debug\Algorithm.exe

@@ -258,5 +258,14 @@
     <ClCompile Include="1717_집합의표현.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="AITech_1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AITech_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AITech_3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,2 +1,5 @@
-﻿  AITech_2.cpp
+﻿  실패율 구하기.cpp
+C:\Users\사용자\source\repos\Algorithm\Algorithm\실패율 구하기.cpp(33,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\실패율 구하기.cpp(48,19): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\실패율 구하기.cpp(67,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   Algorithm.vcxproj -> C:\Users\사용자\source\repos\Algorithm\Debug\Algorithm.exe

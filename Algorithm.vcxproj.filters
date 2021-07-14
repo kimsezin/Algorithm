@@ -282,5 +282,11 @@
     <ClCompile Include="2096_내려가기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="프로그래머스_숫자알파벳과문자열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="프로그래머스_수포자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

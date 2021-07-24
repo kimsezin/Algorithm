@@ -47,6 +47,6 @@ int solution(string s) {
 
 int main()
 {
-	string s = "abcabcabcdeddedded";
+	string s = "aabcbc";
 	solution(s);
 }

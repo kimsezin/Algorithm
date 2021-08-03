@@ -4,41 +4,35 @@
 using namespace std;
 
 string solution(string s) {
-    string answer = "";
-    int idx = 0;
-    int cnt = 0;
-    while (cnt < s.size())
-    {
-        if (s[cnt] == ' ')
-        {
-            idx = cnt+1;
-        }
-        else
-        {
-            if (cnt % 2 == 1)
-            {
-                if (s[idx] >= 'A' and s[idx] <= 'Z')
-                {
-                    s[idx] = s[idx] - 'A' + 'a';
-                }
-                idx++;
-            }
-            else
-            {
-                if (s[idx] >= 'a' and s[idx] <= 'z')
-                {
-                    s[idx] = s[idx] - 'a' + 'A';
-                }
-                idx++;
-            }
-        }
-        cnt++;
-    }
-    return s;
+	int idx = 0;
+	for (int i = 0; i < s.size(); i++)
+	{
+		if (s[i] == ' ')
+		{
+			idx = 0;
+			continue;
+		}
+		if (idx % 2 == 0)
+		{
+
+			s[i] = toupper(s[i]);
+			idx++;
+
+
+		}
+		else
+		{
+
+			s[i] = tolower(s[i]);
+			idx++;
+
+		}
+	}
+	return s;
 }
 int main()
 {
-    string s = "try hello world"
-        ;
-    solution(s);
+	string s = "tryz hello world"
+		;
+	solution(s);
 }

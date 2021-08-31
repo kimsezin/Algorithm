@@ -1,3 +1,9 @@
-﻿  프로그래머스_숫자문자열과영단어.cpp
-C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_숫자문자열과영단어.cpp(23,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+﻿  프로그래머스_위클리챌린지_2주차.cpp
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지_2주차.cpp(13,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지_2주차.cpp(26,35): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지_2주차.cpp(33,35): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지_2주차.cpp(49,30): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지_2주차.cpp(54,35): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지_2주차.cpp(68,31): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지_2주차.cpp(75,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
   Algorithm.vcxproj -> C:\Users\사용자\source\repos\Algorithm\Debug\Algorithm.exe

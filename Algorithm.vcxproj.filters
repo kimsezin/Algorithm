@@ -369,5 +369,14 @@
     <ClCompile Include="프로그래머스_숫자문자열과영단어.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="프로그래머스_신규아이디추천.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="프로그래머스_로또의 최고 순위와 최저 순위.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="프로그래머스_위클리챌린지_2주차.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

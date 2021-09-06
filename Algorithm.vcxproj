@@ -477,7 +477,10 @@
     <ClCompile Include="프로그래머스_오픈채팅방.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="프로그래머스_위클리챌린지4주차.cpp" />
+    <ClCompile Include="프로그래머스_위클리챌린지4주차.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="프로그래머스_위클리챌린지6주차.cpp" />
     <ClCompile Include="프로그래머스_위클리챌린지_2주차.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

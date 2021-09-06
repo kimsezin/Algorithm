@@ -1,4 +1,6 @@
-﻿  프로그래머스_위클리챌린지4주차.cpp
-C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지4주차.cpp(17,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지4주차.cpp(32,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+﻿  프로그래머스_위클리챌린지6주차.cpp
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지6주차.cpp(62,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지6주차.cpp(70,27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지6주차.cpp(99,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\프로그래머스_위클리챌린지6주차.cpp(58): warning C4715: 'cmp': 모든 제어 경로에서 값을 반환하지는 않습니다.
   Algorithm.vcxproj -> C:\Users\사용자\source\repos\Algorithm\Debug\Algorithm.exe

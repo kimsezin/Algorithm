@@ -20,7 +20,7 @@ bool cmp(info a, info b)
         return true;
     }
 
-    if (a.win_avg == b.win_avg)
+    /*if (a.win_avg == b.win_avg)
     {
         if (a.bigger_cnt > b.bigger_cnt)
         {
@@ -38,13 +38,17 @@ bool cmp(info a, info b)
                 return true;
             }
         }
-    }
-	/*if (a.win_avg == b.win_avg)
+    }*/
+	if (a.win_avg == b.win_avg)
 	{
 		if (a.bigger_cnt == b.bigger_cnt)
 		{
+            if (a.weight == b.weight)
+            {
+                return a.idx < b.idx;
+            }
+            else
 			return a.weight > b.weight;
-
 		}
 		else
 		{
@@ -54,7 +58,7 @@ bool cmp(info a, info b)
 	else
 	{
 		return a.win_avg > b.win_avg;
-	}*/
+	}
 }
 vector<int> solution(vector<int> weights, vector<string> head2head) {
     vector<info> result;

@@ -411,5 +411,14 @@
     <ClCompile Include="1620_포켓몬.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1260_DFS와BFS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2606_바이러스.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1012_유기농배추.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

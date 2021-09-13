@@ -420,5 +420,14 @@
     <ClCompile Include="1012_유기농배추.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="넥슨 2번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="넥슨 1번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="넥슨 4번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

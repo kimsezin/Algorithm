@@ -31,9 +31,56 @@
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 #include<iostream>
+#include<string>
 #include<vector>
-#include<algorithm>
 using namespace std;
+int dx[8] = { -1,-1,-1,0,0,1,1,1 };
+int dy[8] = { -1,0,1,-1,1,-1,0,1 };
+vector<string> map;
+int N;
+bool solve()
+{
+	int nx, ny;
+	int cnt;
+	for (int i = 0; i < N; i++)
+	{
+		for (int j = 0; j < N; j++)
+		{
+			if (map[i][j] == 'o')
+			{
+				for (int k = 0; k < 8; k++)
+				{
+					cnt = 1;
+					nx = i + dx[k];
+					ny = j + dy[k];
+					if (nx >= 0 && ny >= 0 && nx < N && ny < N)
+					{
+						if (map[nx][ny] == 'o')
+						{
+							for (int z = 0; z < 3; z++)
+							{
+								nx = nx + dx[k];
+								ny = ny + dy[k];
+								if (nx >= 0 && ny >= 0 && nx < N && ny < N)
+								{
+									if (map[nx][ny] == 'o')
+									{
+										cnt++;
+									}
+								}
+							}
+						}
+						if (cnt == 4)
+						{
+							return true;
+						}
+					}
+				}
+			}
+		}
+	}
+	return false;
+}
 
 int main(int argc, char** argv)
 {
@@ -55,35 +102,23 @@ int main(int argc, char** argv)
 	*/
 	for (test_case = 1; test_case <= T; ++test_case)
 	{
-		double D, point[2] = { 0,0 };
-		int N;
-		double speed[2] = { 0,0 };
-		double max_time = -1;
-		
-		cin >> D >> N;
+		map.clear();
+
+		cin >> N;
 		for (int i = 0; i < N; i++)
 		{
-			double K, S;
-			cin >> point[i] >> speed[i];
+			string temp;
+			cin >> temp;
+			map.push_back(temp);
 		}
-
-		
-		for (int i = 0; i < N; i++)
+		if (solve() == true)
 		{
-			double time = (D - point[i]) / speed[i];
-			
-			if (max_time < time)
-			{
-				max_time = time;
-			}
+			cout << "#" << test_case << " " << "YES" << endl;
 		}
-		cout << fixed;
-		cout.precision(7);
-		cout << '#'<< test_case << " " << D / max_time << endl;
-		
-		
-
-
+		else
+		{
+			cout << "#" << test_case << " " << "NO" << endl;
+		}
 	}
 	return 0;//정상종료시 반드시 0을 리턴해야합니다.
 }

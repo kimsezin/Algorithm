@@ -447,5 +447,8 @@
     <ClCompile Include="SWEA_2058_자릿수더하기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SWEA_2056_연월일달력.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

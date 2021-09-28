@@ -1,1 +1,5 @@
-﻿  Algorithm.vcxproj -> C:\Users\사용자\source\repos\Algorithm\Debug\Algorithm.exe
+﻿  SWEA_2058_자릿수더하기.cpp
+C:\Users\사용자\source\repos\Algorithm\Algorithm\SWEA_2058_자릿수더하기.cpp(55,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\SWEA_2058_자릿수더하기.cpp(39,6): warning C4101: 'test_case' :참조되지 않은 지역 변수입니다.
+C:\Users\사용자\source\repos\Algorithm\Algorithm\SWEA_2058_자릿수더하기.cpp(40,6): warning C4101: 'T' :참조되지 않은 지역 변수입니다.
+  Algorithm.vcxproj -> C:\Users\사용자\source\repos\Algorithm\Debug\Algorithm.exe

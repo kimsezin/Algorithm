@@ -31,7 +31,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 #include<iostream>
-#include<string>
+
 using namespace std;
 
 int main(int argc, char** argv)
@@ -54,53 +54,13 @@ int main(int argc, char** argv)
 	*/
 	for (test_case = 1; test_case <= T; ++test_case)
 	{
-		string temp;
-		cin >> temp;
 
-		int year = stoi(temp.substr(0, 4));
-		int month = stoi(temp.substr(4, 2));
-		int day = stoi(temp.substr(6, 2));
-		
-		if (month > 0 && month <= 12)
-		{
-			if (month == 2)
-			{
-				if (day > 28)
-				{
-					cout << '#' << test_case << ' ' << -1 << endl;
-				}
-				else
-				{
-					cout << '#' << test_case << ' ' << temp.substr(0, 4) << '/' << temp.substr(4, 2) << '/' << temp.substr(6, 2) <<  endl;
-				}
-			}
-			else if (month == 4 || month == 6 || month == 9 || month == 11)
-			{
-				if (day > 30)
-				{
-					cout << '#' << test_case << ' ' << -1 << endl;
-				}
-				else
-				{
-					cout << '#' << test_case << ' ' << temp.substr(0, 4) << '/' << temp.substr(4, 2) << '/' << temp.substr(6, 2)  << endl;
-				}
-			}
-			else
-			{
-				if (day > 31)
-				{
-					cout << '#' << test_case << ' ' << -1 << endl;
-				}
-				else
-				{
-					cout << '#' << test_case << ' ' << temp.substr(0, 4) << '/' << temp.substr(4, 2) << '/' << temp.substr(6, 2)  << endl;
-				}
-			}
-		}
-		else
-		{
-			cout << '#' << test_case << ' ' << -1 << endl;
-		}
+		/////////////////////////////////////////////////////////////////////////////////////////////
+		/*
+			 이 부분에 여러분의 알고리즘 구현이 들어갑니다.
+		 */
+		 /////////////////////////////////////////////////////////////////////////////////////////////
+
 
 	}
 	return 0;//정상종료시 반드시 0을 리턴해야합니다.

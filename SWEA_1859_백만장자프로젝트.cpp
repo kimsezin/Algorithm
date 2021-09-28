@@ -31,7 +31,8 @@
 /////////////////////////////////////////////////////////////////////////////////////////////
 
 #include<iostream>
-#include<string>
+#include<vector>
+#include<algorithm>
 using namespace std;
 
 int main(int argc, char** argv)
@@ -54,53 +55,43 @@ int main(int argc, char** argv)
 	*/
 	for (test_case = 1; test_case <= T; ++test_case)
 	{
-		string temp;
-		cin >> temp;
 
-		int year = stoi(temp.substr(0, 4));
-		int month = stoi(temp.substr(4, 2));
-		int day = stoi(temp.substr(6, 2));
+		vector<long long> result;
+		int N;
+		cin >> N;
+		long long sum = 0;
+		for (int i = 0; i < N; i++)
+		{
+			long long temp;
+			cin >> temp;
+			result.push_back(temp);
+		}
+
 		
-		if (month > 0 && month <= 12)
+		while (result.size() != 0)
 		{
-			if (month == 2)
+			long long max_idx = 0;
+			long long max_value = 0;
+			for (int i = 0; i < result.size(); i++)
 			{
-				if (day > 28)
+				if (max_value < result[i])
 				{
-					cout << '#' << test_case << ' ' << -1 << endl;
-				}
-				else
-				{
-					cout << '#' << test_case << ' ' << temp.substr(0, 4) << '/' << temp.substr(4, 2) << '/' << temp.substr(6, 2) <<  endl;
+					max_value = result[i];
+					max_idx = i;
 				}
 			}
-			else if (month == 4 || month == 6 || month == 9 || month == 11)
+
+			for (int i = 0; i < max_idx; i++)
 			{
-				if (day > 30)
+				if (result[i] < max_value)
 				{
-					cout << '#' << test_case << ' ' << -1 << endl;
-				}
-				else
-				{
-					cout << '#' << test_case << ' ' << temp.substr(0, 4) << '/' << temp.substr(4, 2) << '/' << temp.substr(6, 2)  << endl;
+					sum += max_value - result[i];
 				}
 			}
-			else
-			{
-				if (day > 31)
-				{
-					cout << '#' << test_case << ' ' << -1 << endl;
-				}
-				else
-				{
-					cout << '#' << test_case << ' ' << temp.substr(0, 4) << '/' << temp.substr(4, 2) << '/' << temp.substr(6, 2)  << endl;
-				}
-			}
+			result.erase(result.begin(), result.begin() + max_idx+1);
 		}
-		else
-		{
-			cout << '#' << test_case << ' ' << -1 << endl;
-		}
+		
+		cout << '#' << test_case << " " << sum << endl;
 
 	}
 	return 0;//정상종료시 반드시 0을 리턴해야합니다.

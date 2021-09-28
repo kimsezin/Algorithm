@@ -32,6 +32,7 @@
 
 #include<iostream>
 #include<string>
+#include<algorithm>
 using namespace std;
 
 int main(int argc, char** argv)
@@ -57,49 +58,16 @@ int main(int argc, char** argv)
 		string temp;
 		cin >> temp;
 
-		int year = stoi(temp.substr(0, 4));
-		int month = stoi(temp.substr(4, 2));
-		int day = stoi(temp.substr(6, 2));
-		
-		if (month > 0 && month <= 12)
+		for (int i = 1; i <=10; i++)
 		{
-			if (month == 2)
+			string pattern=temp.substr(0,i);
+			string next_pattern = temp.substr(i, i);
+
+			if (pattern == next_pattern)
 			{
-				if (day > 28)
-				{
-					cout << '#' << test_case << ' ' << -1 << endl;
-				}
-				else
-				{
-					cout << '#' << test_case << ' ' << temp.substr(0, 4) << '/' << temp.substr(4, 2) << '/' << temp.substr(6, 2) <<  endl;
-				}
+				cout << '#' << test_case << ' ' << i << endl;
+				break;
 			}
-			else if (month == 4 || month == 6 || month == 9 || month == 11)
-			{
-				if (day > 30)
-				{
-					cout << '#' << test_case << ' ' << -1 << endl;
-				}
-				else
-				{
-					cout << '#' << test_case << ' ' << temp.substr(0, 4) << '/' << temp.substr(4, 2) << '/' << temp.substr(6, 2)  << endl;
-				}
-			}
-			else
-			{
-				if (day > 31)
-				{
-					cout << '#' << test_case << ' ' << -1 << endl;
-				}
-				else
-				{
-					cout << '#' << test_case << ' ' << temp.substr(0, 4) << '/' << temp.substr(4, 2) << '/' << temp.substr(6, 2)  << endl;
-				}
-			}
-		}
-		else
-		{
-			cout << '#' << test_case << ' ' << -1 << endl;
 		}
 
 	}

@@ -54,24 +54,44 @@ int main(int argc, char** argv)
 	*/
 	for (test_case = 1; test_case <= T; ++test_case)
 	{
-		int map[9][9] = { 0, };
-		for (int i = 0; i < 9; i++)
-		{
-			for (int j = 0; j < 9; j++)
-			{
-				int temp;
-				cin >> temp;
-				map[i][j] = temp;
-			}
-		}
-		
-		for (int i = 0; i < 9; i++)
-		{
-			for (int j = 0; j < 9; j++)
-			{
+		int price;
+		cin >> price;
+		cout << '#' << test_case << endl;
 
-			}
-		}
+		int fiveman = price / 50000;
+		price %= 50000;
+		cout << fiveman << ' ';
+		
+		int man = price / 10000;
+		price %= 10000;
+		cout << man << ' ';
+
+		int fivecheon = price / 5000;
+		price %= 5000;
+		cout << fivecheon << ' ';
+
+		int cheon = price / 1000;
+		price %= 1000;
+		cout << cheon << ' ';
+
+		int fivebaek = price / 500;
+		price %= 500;
+		cout << fivebaek << ' ';
+
+		int hund = price / 100;
+		price %= 100;
+		cout << hund << ' ';
+
+		int fifty = price / 50;
+		price %= 50;
+		cout << fifty << ' ';
+
+		int ten = price / 10;
+		cout << ten << endl;
+		
+		
+
+
 	}
 	return 0;//정상종료시 반드시 0을 리턴해야합니다.
 }

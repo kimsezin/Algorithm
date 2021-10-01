@@ -411,7 +411,10 @@
     <ClCompile Include="SWEA_1954_달팽이숫자.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWEA_1970_쉬운거스름돈.cpp" />
+    <ClCompile Include="SWEA_1959_두개의숫자열.cpp" />
+    <ClCompile Include="SWEA_1970_쉬운거스름돈.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="SWEA_1974_스도쿠검증.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

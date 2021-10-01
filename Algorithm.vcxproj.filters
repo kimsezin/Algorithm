@@ -483,5 +483,8 @@
     <ClCompile Include="SWEA_1970_쉬운거스름돈.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SWEA_1959_두개의숫자열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

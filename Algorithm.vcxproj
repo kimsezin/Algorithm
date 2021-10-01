@@ -402,7 +402,10 @@
     <ClCompile Include="SWEA_11315_오목판정.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWEA_1285_아름이의돌던지기.cpp" />
+    <ClCompile Include="SWEA_1204_최빈수구하기.cpp" />
+    <ClCompile Include="SWEA_1285_아름이의돌던지기.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="SWEA_1288_새로운불면증치료법.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
